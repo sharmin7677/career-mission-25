@@ -1,0 +1,182 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Base Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, rgb(184, 231, 250), rgb(230, 230, 250));
+  color: #1a1a1a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f5f7fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: orange;
+}
+
+.btn {
+  background: linear-gradient(to right, rgb(255, 165, 0), rgb(255, 212, 71));
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #e04903; 
+    color: white; /
+  }
+  
+  
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 1rem;
+    margin-top: 2rem;
+    background: rgb(230, 237, 249);
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.hero-img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+/* Section Styles */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+
+
+.section.with-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background: #f0f3ff;
+    background-color: #eef2fb;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section.with-image > div {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .section.with-image h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .section.with-image p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  
+  .section.with-image .btn:hover {
+    background-color: #e0a903;
+  }
+  
+  .section.with-image img {
+    background: white;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 360px;
+    width: 100%;
+    margin-left: 2rem;
+  }
+/* Video */
+.inspiration .video-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+/* Cards */
+
+.targets .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background: linear-gradient(to top, rgb(230, 237, 249), rgb(157, 229, 255));
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 200px;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+
+.footer-section {
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media (max-width: 767px) {
+    .section.with-image {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section.with-image > div {
+      max-width: 100%;
+    }
+  
+    .section.with-image img {
+      margin: 2rem 0 0;
+      margin-left: 0;
+    }
+
+}
